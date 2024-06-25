@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheat Sheet</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class='title uppercase heading-background'
+      id='article title'>Cheat Sheet</h1>
+      <nav class= "navigation">
+        <ul>
+          <li><a href="#HTML">HTML</a></li>
+          <li><a href="#CSS">CSS</a></li>
+          <li><a href="#footer">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header>
+    <div id="HTML">
+    <h2 class='heading-background'>HTML</h2>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#Elements">Elements</a></li>
+          <li><a href="#Structure">Structure</a></li>
+          <li><a href="#Tables">Tables</a></li>
+          <li><a href="#Semantic HTML">Semantic HTML</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+    <main>
+    <section>
+    <div id="Elements">
+      <h3 class='heading-background'>Elements</h3>
+    <p>HTML stands for Hypertext Markup Language. <br/> Everything in HTML must be between opening and closing tags "&lt and /&gt".<br/> Headers range from h1 to h6 in size.<br/> All visible content shoul be within opening and closing &ltbody tags&gt.<br/> Line Breaks are created with &ltbr&gt tags.<br/>&ltem&gt tags make text italicized while &ltstrong&gt tags make text bold. <br/> Ordered Lists"&ltol&gt" will be numbered while Unordered Lists "&ltul&gt" will be bulleted.<br/>Images and videos can be added with a link to the source between double quotation marks like this &ltimg src="link of image"/&gt or &ltvideo src="link of video"/&gt</p>
+    </div>
+    </section>
+    <div id="Structure">
+      <section>
+      <h3 class='heading-background'>Structure</h3>
+      <p>&lt!DOCTYPE html&gt declaration is always the first line of code in html. It lets the browser know what version of HTML to expect.<br/>&lthtml&gt contains all of your HTML code.<br/>Information about the web page, like the title page &lttitle&gt which will be on the browser's tab, will be in the &lthead&gt.<br/>Anchor tags &lta&gt are used to link to internal pages, external pages, or content on the same page. You can create sections on a webpage and jump to them using &lta&gt tags and adding ids to the elements you wish to jump to.<br/>Whitespace and indentions help make code easier to read.<br/>Comments are made using the syntax &lt!-- comment --&gt</p>
+      </section>
+    </div>
+    <div id="Tables">
+      <section>
+      <h3 class='heading-background'>Tables</h3>
+      <table>
+        <thead>
+        <tr>
+          <th>Table Elements</th>
+          <th>What they do</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lttable&gt</td>
+            <td>creates a table</td>
+          </tr>
+          <tr>
+            <td>&ltthead&gt</td>
+            <td>creates the head of the table</td>
+          </tr>
+          <tr>
+            <td>&lttbody&gt</td>
+            <td>creates the table's body</td>
+          </tr>
+          <tr>
+            <td>&lttfoot&gt</td>
+            <td>creates the table's footer</td>
+          </tr>
+          <tr>
+            <td>&lttr&gt</td>
+            <td>creates table row</td>
+          </tr>
+          <tr>
+            <td>&lttd&gt</td>
+            <td>creates table data</td>
+          </tr>
+          <tr>
+            <td>&ltth&gt</td>
+            <td>headings for tables are made with this</td> 
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan='3'>You can use the rowspan and colspan attributes to span rows and columns a certain number of cells.</td>
+        </tfoot>
+      </table>
+      </section>
+    </div>
+      <section>
+      <div id="Semantic HTML">
+      <h3 class='heading-background'>Semantic HTML</h3>
+      <p>Semantic HTML introduces meaning to a page through specific elements that provide context as to what is in between the tags.<br/>Semantic HTML is a modern standard and makes a website accessible for people who use screen readers to translate the webpage and improves your website’s SEO.<br/>&ltheader&gt, &ltnav&gt, &ltmain&gt and &ltfooter&gt create the basic structure of the webpage.<br/>&ltsection&gt defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.<br/>&ltarticle&gt holds content that makes sense on its own such as articles, blogs, comments, etc.<br/>&ltaside&gt contains information that is related to the main content, but not required in order to understand the dominant information.<br/>&gtfigure&lt encapsulates all types of media.<br/>&ltfigcaption&gt is used to describe the media in &ltfigure&gt.<br/>&ltvideo&gt, &ltembed&gt, and &ltaudio&gt elements are used for media files.</p>
+      </div>
+      </section>
+    </main>
+    <header>
+      <div id="CSS">
+        <h2 class='heading-background'>CSS</h2>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#Setup and Selectors">Setup and Selectors</a></li>
+              <li><a href='#Visual Rules'>Visual Rules</a></li>
+              <li><a href="#The Box Model">The Box Model</a></li>
+              <li><a href="#Display and Positioning">Display and Positioning</a></li>
+              <li><a href="#Colors">Colors</a></li>
+              <li><a href="#Typography">Typography</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div id="Setup and Selectors">
+          <h3 class='heading-background'>Setup and Selectors</h3>
+          <p style="color: purple;">CSS stands for Cascading Style Sheets.<br/>Some commonly used CSS terms, such as ruleset, selector, and declaration.<br/>CSS inline styles can be written inside the opening HTML tag using the style attribute.<br/>Inline styles can be used to style HTML, but it is not the best practice.<br/>An internal stylesheet is written using the &ltstyle&gt element inside the &lthead&gt element of an HTML file.<br/>Internal stylesheets can be used to style HTML but are also not best practice.<br/>An external stylesheet separates CSS code from HTML, by using the .css file extension.<br/>External stylesheets are the best approach when it comes to using HTML and CSS.<br/>External stylesheets are linked to HTML using the &ltlink&gt element.CSS can select HTML elements by type, class, ID, and attribute.<br/>All elements can be selected using the universal selector.<br/>An element can have different states using the pseudo-class selector.<br/>Multiple CSS classes can be applied to one HTML element.<br/>Classes can be reusable, while IDs can only be used once.<br/>IDs are more specific than classes, and classes are more specific than type. That means IDs will override any styles from a class, and classes will override any styles from a type selector.<br/>Multiple selectors can be chained together to select an element. This raises the specificity but can be necessary.<br/>Nested elements can be selected by separating selectors with a space.<br/>Multiple unrelated selectors can receive the same styles by separating the selector names with commas.</p>
+          </div>
+      </section>
+      <section>
+        <div id="Visual Rules">
+          <h3 class='heading-background'>Visual Rules</h3>
+          <p>The font-family property defines the typeface of an element.<br/>font-size controls the size of text displayed.<br/>font-weight defines how thin or thick text is displayed.<br/>The text-align property places text in the left, right, or center of its parent container.<br/>Text can have two different color attributes: color and background-color. color defines the color of the text, while background-color defines the color behind the text.<br/>CSS can make an element transparent with the opacity property.<br/>CSS can also set the background of an element to an image with the background-image property.<br/>The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.</p>
+        </div>
+        </section>
+      <section>
+        <div id="The Box Model">
+          <h3 class='heading-background'>The Box Model</h3>
+          <p>The box model comprises a set of properties used to create space around and between HTML elements.<br/>The height and width of a content area can be set in pixels or percentages.<br/>Borders surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties.<br/>Padding is the space between the content area and the border. It can be set in pixels or percent.<br/>Margin is the amount of spacing outside of an element’s border.<br/>Horizontal margins add, so the total space between the borders of adjacent elements is equal to the sum of the right margin of one element and the left margin of the adjacent element.<br/>Vertical margins collapse, so the space between vertically adjacent elements is equal to the larger margin.<br/>margin: 0 auto horizontally centers an element inside of its parent content area, if it has a width.<br/>The overflow property can be set to display, hidden, or scroll, and dictates how HTML will render content that overflows its parent’s content area.<br/>The visibility property can hide or show elements.</p>
+        </div>
+      </section>
+      <section>
+        <div id="Display and Positioning">
+          <h3 class='heading-background'>Display and Positioning</h3>
+          <p>The position property allows you to specify the position of an element.<br/>When set to relative, an element’s position is relative to its default position on the page.<br/>When set to absolute, an element’s position is relative to its closest positioned parent element. It can be pinned to any part of the web page, but the element will still move with the rest of the document when the page is scrolled.<br/>When set to fixed, an element’s position can be pinned to any part of the web page. The element will remain in view no matter what.<br/>When set to sticky, an element can stick to a defined offset position when the user scrolls its parent container.<br/>The z-index of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.<br/>The display property allows you to control how an element flows vertically and horizontally in a document.<br/>inline elements take up as little space as possible, and they cannot have manually adjusted width or height.<br/>block elements take up the width of their container and can have manually adjusted heights.<br/>inline-block elements can have set width and height, but they can also appear next to each other and do not take up their entire container width.<br/>The float property can move elements as far left or as far right as possible on a web page.<br/>You can clear an element’s left or right side (or both) using the clear property.</p>
+        </div>
+      </section>
+      <section>
+        <div id="Colors">
+          <h3 class='heading-background'>Colors</h3>
+          <p>There are four ways to represent color in CSS<ol><li>Named colors—there are more than 140 named colors.</li><li>Hexadecimal or hex colors<ul><li>Hexadecimal is a number system that has sixteen digits, 0 to 9 followed by “A” to “F”.</li><li>Hex values always begin with # and specify values of red, blue, and green using hexadecimal numbers such as #23F41A.</li><li>Six-digit hex values with duplicate values for each RGB value can be shorted to three digits.</li></ul></li><li>RGB<ul><li>RGB colors use the rgb() syntax with one value for red, one value for blue and one value for green.</li><li>RGB values range from 0 to 255 and look like this: rgb(7, 210, 50).</li></ul></li><li>HSL<ul><li>HSL stands for hue (the color itself), saturation (the intensity of the color), and lightness (how light or dark a color is).</li><li>Hue ranges from 0 to 360 and saturation and lightness are both represented as percentages like this: hsl(200, 20%, 50%).</li></ul></li><li>You can add opacity to color in RGB and HSL by adding a fourth value, a, which is represented as a percentage.</li></ol></p>
+        </div>
+      </section>
+      <section>
+        <div id="Typography">
+          <h3 class="heading-background">Typography</h3>
+          <p>Typography is the art of arranging text on a page.<br/>Text can appear bold or thin with the font-weight property.<br/>Text can appear in italics with the font-style property.<br/>The vertical spacing between lines of text can be modified with the line-height property.<br/>Serif fonts have extra details on the ends of each letter. Sans-Serif fonts do not.<br/>Fallback fonts are used when a certain font is not installed on a user’s computer.<br/>The word-spacing property changes how far apart individual words are.<br/>The letter-spacing property changes how far apart individual letters are.<br/>The text-align property changes the horizontal alignment of text.<br/>Google Fonts provides free fonts that can be used in an HTML file with the &ltlink&gt tag or the @font-face property.<br/>Local fonts can be added to a document with the @font-face property and the path to the font’s source.</p>
+        </div>
+      </section>
+    </main>
+   <footer>
+    <div id="footer"/>
+    BY: John Treen
+    <nav class:"navigation">
+    <a href='#article title'>Back to the top of the page</a> </nav>
+   </footer>
+  </body>
+</html>
